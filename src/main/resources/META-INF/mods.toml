@@ -1,0 +1,31 @@
+modLoader="javafml"
+loaderVersion="[41,)"
+license="All rights reserved"
+[[mods]]
+    modId="the_sculky_depths"
+    version="${file.jarVersion}"
+    displayName="the_sculky_depths"
+    logoFile="the_sculky_depths.png"
+    credits="DoltHHaven, Carmen"
+    authors="Team Taiga Modding"
+description='''
+A mod focused on spicing up the 1.19 Deep Dark biome
+'''
+[[dependencies.the_sculky_depths]]
+    modId="forge"
+    mandatory=true
+    versionRange="[41,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.the_sculky_depths]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19,1.20)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.the_sculky_depths]]
+    modId = "blueprint"
+    mandatory = true
+    versionRange = "[6.0.5,)"
+    ordering = "BEFORE"
+    side = "BOTH"
