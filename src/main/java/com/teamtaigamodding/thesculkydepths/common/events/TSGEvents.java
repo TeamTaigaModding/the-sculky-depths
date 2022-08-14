@@ -16,22 +16,4 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
 @Mod.EventBusSubscriber(modid = TheSculkyDepths.MOD_ID)
-public class TSGEvents {
-    @SubscribeEvent
-    public static void PlaceEchoShard(PlayerInteractEvent.RightClickBlock event) {
-        Player player = event.getEntity();
-        ItemStack usedItem = event.getItemStack();
-        InteractionHand hand = event.getHand();
-        if (usedItem.is(Items.ECHO_SHARD)) {
-            BlockPlaceContext context = new BlockPlaceContext(player, hand, new ItemStack(TSDBlocks.ECHO_SHARD_BLOCK.get().asItem()), event.getHitVec());
-            InteractionResult result = TSDBlocks.ECHO_SHARD_BLOCK.get().asItem().useOn(context);
-            if (player.isCreative()) usedItem.shrink(1);
-            event.setCanceled(true);
-            event.setCancellationResult(result);
-        }
-    }
-
-
-
-
-}
+public class TSGEvents {}
