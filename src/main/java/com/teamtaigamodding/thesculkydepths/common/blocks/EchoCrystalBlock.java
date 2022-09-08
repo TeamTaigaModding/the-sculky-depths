@@ -17,4 +17,6 @@ public class EchoCrystalBlock extends AmethystClusterBlock {
     public int getExpDrop(BlockState state, net.minecraft.world.level.LevelReader level, RandomSource randomSource, BlockPos pos, int fortuneLevel, int silkTouchLevel) {
         return silkTouchLevel == 0 ? 20 : 0;
     }
+
+
 }

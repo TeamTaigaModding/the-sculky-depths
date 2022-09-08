@@ -10,8 +10,4 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
 
 @Mod.EventBusSubscriber(modid = TheSculkyDepths.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
-public class TSDBlocks {
-    public static final BlockSubRegistryHelper HELPER = TheSculkyDepths.REGISTRY_HELPER.getBlockSubHelper();
-    public static final RegistryObject<Block> ECHO_CRYSTAL = HELPER.createBlock("echo_crystal", () -> new EchoCrystalBlock(BlockProperties.ECHO_CRYSTAL), CreativeModeTab.TAB_MISC);
-
-}
+public class TSDItems { }

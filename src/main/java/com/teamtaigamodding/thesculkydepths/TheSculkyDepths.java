@@ -24,7 +24,6 @@ public class TheSculkyDepths {
     }
     private void eventSetup(final FMLLoadCompleteEvent event) {
         MinecraftForge.EVENT_BUS.register(new TSGEvents());
+
     }
-
-
 }
