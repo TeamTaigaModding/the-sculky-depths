@@ -1,6 +1,8 @@
 package com.teamtaigamodding.thesculkydepths.common.blocks.entities;
 
 import com.teamabnormals.blueprint.common.block.entity.BlueprintChestBlockEntity;
+import com.teamabnormals.blueprint.core.registry.BlueprintBlockEntityTypes;
+import com.teamtaigamodding.thesculkydepths.common.registry.TSDBlockEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.NonNullList;
 import net.minecraft.network.chat.Component;
@@ -16,5 +18,7 @@ public class StoneChestBlockEntity extends BlueprintChestBlockEntity {
         super(typeIn, pos, state);
     }
 
-
+    public StoneChestBlockEntity(BlockPos pos, BlockState state) {
+        super(TSDBlockEntities.STONE_CHEST.get(), pos, state);
+    }
 }
