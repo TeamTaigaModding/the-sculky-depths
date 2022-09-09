@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "A": {
-      "item": "minecraft:chiseled _deepslate"
+      "item": "minecraft:chiseled_deepslate"
     },
     "B": {
       "item": "minecraft:soul_torch"
