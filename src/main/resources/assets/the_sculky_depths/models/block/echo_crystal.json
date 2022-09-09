@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "the_sculky_depths:block/echo_crystal"
+  }
+}

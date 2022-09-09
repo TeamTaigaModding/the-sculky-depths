@@ -4,7 +4,7 @@ license="All rights reserved"
 [[mods]]
     modId="the_sculky_depths"
     version="${file.jarVersion}"
-    displayName="the_sculky_depths"
+    displayName="The Sculky Depths"
     logoFile="the_sculky_depths.png"
     credits="DoltHHaven, Carmen"
     authors="Team Taiga Modding"

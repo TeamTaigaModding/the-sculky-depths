@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "the_sculky_depths:block/echo_crystal",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "the_sculky_depths:block/echo_crystal",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "the_sculky_depths:block/echo_crystal",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "the_sculky_depths:block/echo_crystal",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "the_sculky_depths:block/echo_crystal"
+    },
+    "facing=west": {
+      "model": "the_sculky_depths:block/echo_crystal",
+      "x": 90,
+      "y": 270
+    }
+  }
+}
