@@ -1,34 +1,25 @@
 package com.teamtaigamodding.thesculkydepths.common.blocks;
 
 import com.teamabnormals.blueprint.common.block.chest.BlueprintChestBlock;
-import com.teamabnormals.blueprint.common.block.entity.BlueprintChestBlockEntity;
+import com.teamabnormals.blueprint.core.api.IChestBlock;
+import com.teamabnormals.blueprint.core.registry.BlueprintBlockEntityTypes;
 import com.teamtaigamodding.thesculkydepths.common.blocks.entities.StoneChestBlockEntity;
-import com.teamtaigamodding.thesculkydepths.common.events.scheduler.OpenChestTask;
-import com.teamtaigamodding.thesculkydepths.common.events.scheduler.TSGTickHandler;
+import com.teamtaigamodding.thesculkydepths.common.registry.TSDBlockEntities;
 import net.minecraft.core.BlockPos;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
-import net.minecraft.world.MenuProvider;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.monster.piglin.PiglinAi;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.inventory.AbstractContainerMenu;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.BaseEntityBlock;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.ChestBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.properties.BooleanProperty;
-import net.minecraft.world.phys.BlockHitResult;
-import org.jetbrains.annotations.Nullable;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.VoxelShape;
+import org.jetbrains.annotations.NotNull;
 
-import java.util.concurrent.TimeUnit;
+public class StoneChestBlock extends ChestBlock implements IChestBlock {
+    private final String TYPE = "stone";
 
-public class StoneChestBlock extends BlueprintChestBlock {
-
-    public StoneChestBlock(String type, Properties props) {
-        super(type, props);
+    public StoneChestBlock(Properties properties) {
+        super(properties, TSDBlockEntities.STONE_CHEST::get);
     }
 
     @Override
@@ -36,7 +27,14 @@ public class StoneChestBlock extends BlueprintChestBlock {
         return new StoneChestBlockEntity(pos, state);
     }
 
+    @Override
+    public VoxelShape getShape(BlockState state, BlockGetter Getter, @NotNull BlockPos Pos, @NotNull CollisionContext CollisionContext) {
+        return Block.box(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D);
+    }
 
-
+    @Override
+    public String getChestType() {
+        return TYPE;
+    }
 }
 
