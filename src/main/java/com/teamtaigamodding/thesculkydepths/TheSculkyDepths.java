@@ -2,6 +2,7 @@ package com.teamtaigamodding.thesculkydepths;
 
 import com.teamabnormals.blueprint.core.util.registry.RegistryHelper;
 import com.teamtaigamodding.thesculkydepths.client.renderer.Blocks.StoneChestBlockEntityRenderer;
+import com.teamtaigamodding.thesculkydepths.client.renderer.Blocks.TSDClientSetup;
 import com.teamtaigamodding.thesculkydepths.common.events.TSGEvents;
 import com.teamtaigamodding.thesculkydepths.common.registry.TSDBlockEntities;
 import net.minecraftforge.client.event.EntityRenderersEvent;
@@ -24,6 +25,7 @@ public class TheSculkyDepths {
 
         bus.addListener(this::eventSetup);
         bus.addListener(this::rendererSetup);
+        bus.addListener(TSDClientSetup::setup);
 
     }
     private void eventSetup(final FMLLoadCompleteEvent event) {
