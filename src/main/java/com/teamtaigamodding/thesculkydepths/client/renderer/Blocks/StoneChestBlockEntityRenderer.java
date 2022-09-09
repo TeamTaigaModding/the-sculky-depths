@@ -5,9 +5,11 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.teamtaigamodding.thesculkydepths.TheSculkyDepths;
 import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.model.geom.ModelLayerLocation;
+import net.minecraft.client.model.geom.ModelLayers;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.*;
+import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
 
@@ -15,14 +17,15 @@ import net.minecraft.world.entity.Entity;
 
 public class StoneChestBlockEntityRenderer<T extends Entity> extends EntityModel<T> {
 
-    // This layer location should be baked with EntityRendererProvider.Context in the entity renderer and passed into this model's constructor
     public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation(TheSculkyDepths.MOD_ID, "custom_model"), "main");
     private final ModelPart Lid;
     private final ModelPart Base;
 
-    public StoneChestBlockEntityRenderer(ModelPart root) {
-        this.Lid = root.getChild("Lid");
-        this.Base = root.getChild("Base");
+    public StoneChestBlockEntityRenderer(BlockEntityRendererProvider.Context context) {
+        ModelPart modelpart = context.bakeLayer(ModelLayers.CHEST);
+
+        this.Lid = modelpart.getChild("Lid");
+        this.Base = modelpart.getChild("Base");
     }
 
     public static LayerDefinition createBodyLayer() {
