@@ -13,13 +13,14 @@ import net.minecraft.world.entity.Entity;
 
 // Made with Blockbench 4.3.1
 
-public class StoneChestRenderer<T extends Entity> extends EntityModel<T> {
+public class StoneChestBlockEntityRenderer<T extends Entity> extends EntityModel<T> {
+
     // This layer location should be baked with EntityRendererProvider.Context in the entity renderer and passed into this model's constructor
     public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation(TheSculkyDepths.MOD_ID, "custom_model"), "main");
     private final ModelPart Lid;
     private final ModelPart Base;
 
-    public StoneChestRenderer(ModelPart root) {
+    public StoneChestBlockEntityRenderer(ModelPart root) {
         this.Lid = root.getChild("Lid");
         this.Base = root.getChild("Base");
     }
