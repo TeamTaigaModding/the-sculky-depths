@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "the_sculky_depths:sculk_bone_block"
+  },
+  "result": "the_sculky_depths:carved_sculk_bone_block"
+}
