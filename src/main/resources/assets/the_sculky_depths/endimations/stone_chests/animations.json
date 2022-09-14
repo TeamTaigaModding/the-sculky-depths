@@ -1,0 +1,189 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.stone_chest.open": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 2.56,
+			"bones": {
+				"Lid": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.32": [0, 0, 0],
+						"0.68": [0, 0, 0],
+						"1.2": [0, 0, 0],
+						"1.72": {
+							"pre": [-16.5, 0, 0],
+							"post": [-16.5, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"position": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.68": {
+							"post": [0, 0, 2],
+							"lerp_mode": "catmullrom"
+						},
+						"1.2": {
+							"post": [0, 0, 4],
+							"lerp_mode": "catmullrom"
+						},
+						"1.68": {
+							"post": [0, 0.5, 6],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "stoneslide"
+				}
+			}
+		},
+		"animation.stone_chest.open2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 2.56,
+			"bones": {
+				"Lid": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.32": [0, 0, 0],
+						"0.68": [0, 0, 0],
+						"1.2": [0, 0, 0],
+						"1.72": {
+							"pre": [0, 0, -16.5],
+							"post": [0, 0, -16.5],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"position": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.68": {
+							"post": [-2, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"1.2": {
+							"post": [-4, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"1.68": {
+							"post": [-6, 0.5, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "stoneslide"
+				}
+			}
+		},
+		"animation.stone_chest.close": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1.84,
+			"bones": {
+				"Lid": {
+					"rotation": {
+						"0.0": [-16.5, 0, 0],
+						"0.4": {
+							"pre": [0, 0, 0],
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"position": {
+						"0.0": {
+							"post": [0, 0.5, 6],
+							"lerp_mode": "catmullrom"
+						},
+						"0.4": {
+							"post": [0, 0, 4],
+							"lerp_mode": "catmullrom"
+						},
+						"1.32": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			},
+			"sound_effects": {
+				"0.12": {
+					"effect": "stoneslide2"
+				}
+			}
+		},
+		"animation.stone_chest.close2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1.84,
+			"bones": {
+				"Lid": {
+					"rotation": {
+						"0.0": [0, 0, -16.5],
+						"0.4": {
+							"pre": [0, 0, 0],
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"position": {
+						"0.0": {
+							"post": [-6, 0.5, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.4": {
+							"post": [-4, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"1.32": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			},
+			"sound_effects": {
+				"0.12": {
+					"effect": "stoneslide2"
+				}
+			}
+		},
+		"animation.stone_chest.locked": {
+			"animation_length": 0.96,
+			"bones": {
+				"Lid": {
+					"position": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.16": {
+							"post": [0, 0, 0.5],
+							"lerp_mode": "catmullrom"
+						},
+						"0.52": {
+							"post": [0, 0, 0.5],
+							"lerp_mode": "catmullrom"
+						},
+						"0.68": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "stonelocked"
+				}
+			}
+		}
+	}
+}

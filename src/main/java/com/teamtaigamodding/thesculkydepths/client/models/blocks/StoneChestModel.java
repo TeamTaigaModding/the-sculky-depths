@@ -1,31 +1,31 @@
-package com.teamtaigamodding.thesculkydepths.client.renderer.Blocks;
+package com.teamtaigamodding.thesculkydepths.client.models.blocks;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.teamtaigamodding.thesculkydepths.TheSculkyDepths;
-import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.geom.ModelLayers;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.*;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.entity.Entity;
 
 // Made with Blockbench 4.3.1
 
-public class StoneChestBlockEntityRenderer<T extends Entity> extends EntityModel<T> {
+public class StoneChestModel {
+    private static final RenderType RENDER_TYPE = RenderType.entityCutoutNoCull(new ResourceLocation(TheSculkyDepths.MOD_ID, "textures/entity/chest/stone/normal.png"));
 
-    public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation(TheSculkyDepths.MOD_ID, "custom_model"), "main");
-    private final ModelPart Lid;
+
+   public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation(TheSculkyDepths.MOD_ID, "stone_chest"), "main");
+   private final ModelPart Lid;
     private final ModelPart Base;
 
-    public StoneChestBlockEntityRenderer(BlockEntityRendererProvider.Context context) {
-        ModelPart modelpart = context.bakeLayer(ModelLayers.CHEST);
+    public StoneChestModel(ModelPart root) {
 
-        this.Lid = modelpart.getChild("Lid");
-        this.Base = modelpart.getChild("Base");
+        this.Lid = root.getChild("Lid");
+        this.Base = root.getChild("Base");
     }
 
     public static LayerDefinition createBodyLayer() {
@@ -39,14 +39,9 @@ public class StoneChestBlockEntityRenderer<T extends Entity> extends EntityModel
         return LayerDefinition.create(meshdefinition, 64, 64);
     }
 
-    @Override
-    public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
-
+    public void render(PoseStack matrixStack, VertexConsumer builder, int packedLight, int packedOverlay, float partialTicks) {
+        this.Lid.render(matrixStack, builder, packedLight, packedOverlay);
+        this.Base.render(matrixStack, builder, packedLight, packedOverlay);
     }
 
-    @Override
-    public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
-        Lid.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
-        Base.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
-    }
 }

@@ -1,8 +1,5 @@
 package com.teamtaigamodding.thesculkydepths.common.blocks;
 
-import com.teamabnormals.blueprint.common.block.chest.BlueprintChestBlock;
-import com.teamabnormals.blueprint.core.api.IChestBlock;
-import com.teamabnormals.blueprint.core.registry.BlueprintBlockEntityTypes;
 import com.teamtaigamodding.thesculkydepths.common.blocks.entities.StoneChestBlockEntity;
 import com.teamtaigamodding.thesculkydepths.common.registry.TSDBlockEntities;
 import net.minecraft.core.BlockPos;
@@ -15,9 +12,7 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
 
-public class StoneChestBlock extends ChestBlock implements IChestBlock {
-    private final String TYPE = "stone";
-
+public class StoneChestBlock extends ChestBlock {
     public StoneChestBlock(Properties properties) {
         super(properties, TSDBlockEntities.STONE_CHEST::get);
     }
@@ -32,9 +27,5 @@ public class StoneChestBlock extends ChestBlock implements IChestBlock {
         return Block.box(0.0D, 0.0D, 0.0D, 16.0D, 16.0D, 16.0D);
     }
 
-    @Override
-    public String getChestType() {
-        return TYPE;
-    }
 }
 

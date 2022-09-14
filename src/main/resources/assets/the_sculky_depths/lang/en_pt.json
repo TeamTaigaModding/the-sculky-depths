@@ -1,5 +1,8 @@
 {
   "block.the_sculky_depths.deepslate_lantern": "Tough lantarrn",
   "block.the_sculky_depths.echo_crystal": "Essence o' Echoin'",
-  "block.the_sculky_depths.stone_chest": "Coffer o' stone"
+  "block.the_sculky_depths.sculk_bone_block": "Chunk o' infested bones",
+  "block.the_sculky_depths.carved_sculk_bone_block": "Carv'd infested bones",
+  "block.the_sculky_depths.stone_chest": "Coffer o' stone",
+  "item.the_sculky_depths.echolocator": "Dead man's pathfinder"
 }

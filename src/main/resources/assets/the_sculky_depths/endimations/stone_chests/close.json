@@ -1,0 +1,46 @@
+{
+	"length": 1.84,
+	"parts": {
+		"Lid": {
+			"rotation": [
+				{
+					"time": 0,
+					"transform": [-16.5, 0, 0],
+					"interpolation": {
+						"type": "linear"
+					}
+				},
+				{
+					"time": 0.4,
+					"transform": [0, 0, 0],
+					"interpolation": {
+						"type": "catmullrom"
+					}
+				}
+			],
+			"position": [
+				{
+					"time": 0,
+					"transform": [0, 0.5, 6],
+					"interpolation": {
+						"type": "catmullrom"
+					}
+				},
+				{
+					"time": 0.4,
+					"transform": [0, 0, 4],
+					"interpolation": {
+						"type": "catmullrom"
+					}
+				},
+				{
+					"time": 1.32,
+					"transform": [0, 0, 0],
+					"interpolation": {
+						"type": "catmullrom"
+					}
+				}
+			]
+		}
+	}
+}

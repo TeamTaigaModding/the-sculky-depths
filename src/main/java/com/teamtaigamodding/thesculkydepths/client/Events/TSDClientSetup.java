@@ -1,4 +1,4 @@
-package com.teamtaigamodding.thesculkydepths.client.renderer.Blocks;
+package com.teamtaigamodding.thesculkydepths.client.Events;
 
 import com.teamtaigamodding.thesculkydepths.common.registry.TSDBlocks;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
