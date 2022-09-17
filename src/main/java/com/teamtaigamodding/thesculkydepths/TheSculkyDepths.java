@@ -2,6 +2,7 @@ package com.teamtaigamodding.thesculkydepths;
 
 import com.teamabnormals.blueprint.core.util.registry.RegistryHelper;
 import com.teamtaigamodding.thesculkydepths.client.Events.TSDClientSetup;
+import com.teamtaigamodding.thesculkydepths.client.models.blocks.StoneChestModel;
 import com.teamtaigamodding.thesculkydepths.client.renderer.Blocks.StoneChestRenderer;
 import com.teamtaigamodding.thesculkydepths.common.events.TSGEvents;
 import com.teamtaigamodding.thesculkydepths.common.registry.TSDBlockEntities;
@@ -24,6 +25,7 @@ public class TheSculkyDepths {
 
 
         bus.addListener(this::eventSetup);
+        bus.addListener(this::registerLayerDefinitions);
         bus.addListener(this::rendererSetup);
         bus.addListener(TSDClientSetup::setup);
         bus.addListener(this::rendererSetup);
@@ -35,5 +37,9 @@ public class TheSculkyDepths {
     private void rendererSetup(EntityRenderersEvent.RegisterRenderers event) {
         event.registerBlockEntityRenderer(TSDBlockEntities.STONE_CHEST.get(), StoneChestRenderer::new);
 
+    }
+
+    private void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
+        event.registerLayerDefinition(StoneChestModel.LAYER_LOCATION, StoneChestModel::createBodyLayer);
     }
 }

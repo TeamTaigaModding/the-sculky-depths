@@ -28,6 +28,9 @@ public class StoneChestRenderer implements BlockEntityRenderer<StoneChestBlockEn
 
         VertexConsumer ivertexbuilder = bufferIn.getBuffer(RenderType.entityCutoutNoCull(TEXTURE));
 
+        this.ChestModel.Lid.render(matrixStack, ivertexbuilder, combinedLightIn, combinedLightIn);
+        this.ChestModel.Base.render(matrixStack, ivertexbuilder, combinedLightIn, combinedLightIn);
+
         matrixStack.popPose();
     }
 }
