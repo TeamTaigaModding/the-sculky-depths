@@ -43,13 +43,12 @@ public class StoneChestRenderer implements BlockEntityRenderer<StoneChestBlockEn
         VertexConsumer ivertexbuilder = bufferIn.getBuffer(RenderType.entityCutoutNoCull(TEXTURE));
 
         // determine light level to render block at
-        int lightAbove = LevelRenderer.getLightColor(Minecraft.getInstance().level, tile.getBlockPos().above());
-
 
         // Make the chest face different ways
         BlockState blockstate = tile.getLevel() != null ? tile.getBlockState() : TSDBlocks.STONE_CHEST.get().defaultBlockState().setValue(StoneChestBlock.FACING, Direction.SOUTH);
         float rot = blockstate.getValue(ChestBlock.FACING).toYRot();
-        matrixStack.mulPose(Vector3f.YP.rotationDegrees(-rot));
+        matrixStack.mulPose(Vector3f.YP.rotationDegrees(rot));
+
 
         // Actual render code
         this.ChestModel.render(matrixStack, ivertexbuilder, combinedLight, combinedOverlay);

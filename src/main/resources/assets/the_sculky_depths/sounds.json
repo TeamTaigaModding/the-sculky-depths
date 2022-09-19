@@ -1,14 +1,14 @@
 {
   "block.stone_chest.open": {
     "sounds": [
-      "block/stone_chest/open1",
-      "block/stone_chest/open2"
+      "the_sculky_depths:block/stone_chest/open1",
+      "the_sculky_depths:block/stone_chest/open2"
     ],
     "subtitle": "subtitles.the_sculky_depths.block.stone_chest.open"
   },
   "block.stone_chest.locked": {
     "sounds": [
-      "block/stone_chest/locked"
+      "the_sculky_depths:block/stone_chest/locked"
     ],
     "subtitle": "subtitles.the_sculky_depths.block.stone_chest.locked"
   }
