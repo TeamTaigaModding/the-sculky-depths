@@ -2,14 +2,23 @@ package com.teamtaigamodding.thesculkydepths.client.renderer.Blocks;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
+import com.mojang.math.Vector3f;
 import com.teamtaigamodding.thesculkydepths.TheSculkyDepths;
 import com.teamtaigamodding.thesculkydepths.client.models.blocks.StoneChestModel;
+import com.teamtaigamodding.thesculkydepths.common.blocks.StoneChestBlock;
 import com.teamtaigamodding.thesculkydepths.common.blocks.entities.StoneChestBlockEntity;
+import com.teamtaigamodding.thesculkydepths.common.registry.TSDBlocks;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.LevelRenderer;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
+import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.ChestBlock;
+import net.minecraft.world.level.block.state.BlockState;
 
 public class StoneChestRenderer implements BlockEntityRenderer<StoneChestBlockEntity> {
     private static final ResourceLocation TEXTURE = new ResourceLocation(TheSculkyDepths.MOD_ID, "textures/entity/chest/stone/normal.png");
@@ -21,15 +30,20 @@ public class StoneChestRenderer implements BlockEntityRenderer<StoneChestBlockEn
     }
 
     @Override
-    public void render(StoneChestBlockEntity tile, float partialTicks, PoseStack matrixStack, MultiBufferSource bufferIn, int combinedLightIn, int combinedOverlayIn) {
+    public void render(StoneChestBlockEntity tile, float partialTicks, PoseStack matrixStack, MultiBufferSource bufferIn, int combinedLight, int combinedOverlay) {
         matrixStack.pushPose();
         matrixStack.translate(0.5D, 1.5D, 0.5D);
         matrixStack.scale(1.0F, -1.0F, -1.0F);
 
         VertexConsumer ivertexbuilder = bufferIn.getBuffer(RenderType.entityCutoutNoCull(TEXTURE));
+        int lightAbove = LevelRenderer.getLightColor(Minecraft.getInstance().level, tile.getBlockPos().above());
 
-        this.ChestModel.Lid.render(matrixStack, ivertexbuilder, combinedLightIn, combinedLightIn);
-        this.ChestModel.Base.render(matrixStack, ivertexbuilder, combinedLightIn, combinedLightIn);
+
+        BlockState blockstate = tile.getLevel() != null ? tile.getBlockState() : TSDBlocks.STONE_CHEST.get().defaultBlockState().setValue(StoneChestBlock.FACING, Direction.SOUTH);
+        float rot = blockstate.getValue(ChestBlock.FACING).toYRot();
+        matrixStack.mulPose(Vector3f.YP.rotationDegrees(-rot));
+
+        this.ChestModel.render(matrixStack, ivertexbuilder, lightAbove, combinedOverlay);
 
         matrixStack.popPose();
     }
