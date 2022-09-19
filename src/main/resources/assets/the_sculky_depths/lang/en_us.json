@@ -4,5 +4,11 @@
   "block.the_sculky_depths.sculk_bone_block": "Sculk Bone Block",
   "block.the_sculky_depths.carved_sculk_bone_block": "Carved Sculk Bone Block",
   "block.the_sculky_depths.stone_chest": "Stone Chest",
-  "item.the_sculky_depths.echolocator": "Echolocator"
+
+
+  "item.the_sculky_depths.echolocator": "Echolocator",
+
+
+  "subtitles.the_sculky_depths.block.stone_chest.open": "Chest opens",
+  "subtitles.the_sculky_depths.block.stone_chest.locked": "Lock clicks"
 }

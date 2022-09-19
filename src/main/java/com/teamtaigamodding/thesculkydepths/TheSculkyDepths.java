@@ -6,6 +6,7 @@ import com.teamtaigamodding.thesculkydepths.client.models.blocks.StoneChestModel
 import com.teamtaigamodding.thesculkydepths.client.renderer.Blocks.StoneChestRenderer;
 import com.teamtaigamodding.thesculkydepths.common.events.TSGEvents;
 import com.teamtaigamodding.thesculkydepths.common.registry.TSDBlockEntities;
+import com.teamtaigamodding.thesculkydepths.common.registry.TSDSoundEvents;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -22,7 +23,7 @@ public class TheSculkyDepths {
         MinecraftForge.EVENT_BUS.register(this);
 
         REGISTRY_HELPER.register(bus);
-
+        TSDSoundEvents.SOUNDS.register(bus);
 
         bus.addListener(this::eventSetup);
         bus.addListener(this::registerLayerDefinitions);

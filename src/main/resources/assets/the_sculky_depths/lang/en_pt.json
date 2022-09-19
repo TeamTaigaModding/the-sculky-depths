@@ -4,5 +4,11 @@
   "block.the_sculky_depths.sculk_bone_block": "Chunk o' infested bones",
   "block.the_sculky_depths.carved_sculk_bone_block": "Carv'd infested bones",
   "block.the_sculky_depths.stone_chest": "Coffer o' stone",
-  "item.the_sculky_depths.echolocator": "Dead man's pathfinder"
+
+
+  "item.the_sculky_depths.echolocator": "Dead man's pathfinder",
+
+
+  "subtitles.the_sculky_depths.block.stone_chest.open": "Stony coffer be opened",
+  "subtitles.the_sculky_depths.block.stone_chest.locked": "Sunken safe be bound"
 }
