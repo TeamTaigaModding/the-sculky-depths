@@ -52,7 +52,7 @@ public class StoneChestRenderer implements BlockEntityRenderer<StoneChestBlockEn
         matrixStack.mulPose(Vector3f.YP.rotationDegrees(-rot));
 
         // Actual render code
-        this.ChestModel.render(matrixStack, ivertexbuilder, lightAbove, combinedOverlay);
+        this.ChestModel.render(matrixStack, ivertexbuilder, combinedLight, combinedOverlay);
 
         matrixStack.popPose();
     }
