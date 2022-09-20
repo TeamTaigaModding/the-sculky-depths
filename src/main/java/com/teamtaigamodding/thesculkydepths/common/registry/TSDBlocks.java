@@ -20,4 +20,7 @@ public class TSDBlocks {
     public static final RegistryObject<Block> DEEPSLATE_LANTERN = HELPER.createBlock("deepslate_lantern", () -> new Block(TSDBlockProps.DEEPSLATE_LANTERN), CreativeModeTab.TAB_BUILDING_BLOCKS);
     public static final RegistryObject<Block> SCULK_BONE_BLOCK = HELPER.createBlock("sculk_bone_block", () -> new RotatedPillarBlock(TSDBlockProps.SCULK_BONE_BLOCK), CreativeModeTab.TAB_BUILDING_BLOCKS);
     public static final RegistryObject<Block> CARVED_SCULK_BONE_BLOCK = HELPER.createBlock("carved_sculk_bone_block", () -> new RotatedPillarBlock(TSDBlockProps.CARVED_SCULK_BONE_BLOCK), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    public static final RegistryObject<Block> SCULK_SPINE = HELPER.createBlock("sculk_spine", () -> new RotatedPillarBlock(TSDBlockProps.SCULK_SPINE), CreativeModeTab.TAB_BUILDING_BLOCKS);
+    public static final RegistryObject<Block> BROKEN_JUKEBOX = HELPER.createBlock("broken_jukebox", () -> new Block(TSDBlockProps.BROKEN_JUKEBOX), CreativeModeTab.TAB_BUILDING_BLOCKS);
+
 }
