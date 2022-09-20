@@ -14,10 +14,13 @@
   },
   "block.echo_crystal.place": {
     "sounds": [
-      "the_sculky_depths:block/echo_crystal/place1"
+      "the_sculky_depths:block/echo_crystal/place1",
+      "the_sculky_depths:block/echo_crystal/place2",
+      "the_sculky_depths:block/echo_crystal/place3"
     ],
     "subtitle": "subtitles.block.generic.place"
   },
+
   "block.echo_crystal.break": {
     "sounds": [
       "the_sculky_depths:block/echo_crystal/break1",
