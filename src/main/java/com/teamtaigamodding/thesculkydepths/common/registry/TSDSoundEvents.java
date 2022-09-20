@@ -14,4 +14,17 @@ public class TSDSoundEvents {
             () -> new SoundEvent(new ResourceLocation(TheSculkyDepths.MOD_ID, "block.stone_chest.locked")));
     public static final RegistryObject<SoundEvent> STONE_CHEST_OPEN = SOUNDS.register("block.stone_chest.open",
             () -> new SoundEvent(new ResourceLocation(TheSculkyDepths.MOD_ID, "block.stone_chest.open")));
+    public static final RegistryObject<SoundEvent> ECHO_CRYSTAL_PLACE = SOUNDS.register("block.echo_crystal.place",
+            () -> new SoundEvent(new ResourceLocation(TheSculkyDepths.MOD_ID, "block.echo_crystal.place")));
+    public static final RegistryObject<SoundEvent> ECHO_CRYSTAL_BREAK = SOUNDS.register("block.echo_crystal.break",
+            () -> new SoundEvent(new ResourceLocation(TheSculkyDepths.MOD_ID, "block.echo_crystal.break")));
+
+
+    public static final RegistryObject<SoundEvent> DEAD_RINGER_CHARGE = SOUNDS.register("item.dead_ringer.charge",
+            () -> new SoundEvent(new ResourceLocation(TheSculkyDepths.MOD_ID, "item.dead_ringer.charge")));
+    public static final RegistryObject<SoundEvent> DEAD_RINGER_RELEASE = SOUNDS.register("item.dead_ringer.release",
+            () -> new SoundEvent(new ResourceLocation(TheSculkyDepths.MOD_ID, "item.dead_ringer.release")));
+
+    public static final RegistryObject<SoundEvent> BEHEMOTH_EMERGE = SOUNDS.register("entity.behemoth.emerge",
+            () -> new SoundEvent(new ResourceLocation(TheSculkyDepths.MOD_ID, "entity.behemoth.emerge")));
 }

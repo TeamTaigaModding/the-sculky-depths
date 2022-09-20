@@ -11,5 +11,39 @@
       "the_sculky_depths:block/stone_chest/locked"
     ],
     "subtitle": "subtitles.the_sculky_depths.block.stone_chest.locked"
+  },
+  "block.echo_crystal.place": {
+    "sounds": [
+      "the_sculky_depths:block/echo_crystal/place1"
+    ],
+    "subtitle": "subtitles.block.generic.place"
+  },
+  "block.echo_crystal.break": {
+    "sounds": [
+      "the_sculky_depths:block/echo_crystal/break1",
+      "the_sculky_depths:block/echo_crystal/break2",
+      "the_sculky_depths:block/echo_crystal/break3"
+    ],
+    "subtitle": "subtitles.block.generic.break"
+  },
+
+  "item.dead_ringer.charge": {
+    "sounds": [
+      "the_sculky_depths:item/dead_ringer/charge1"
+    ],
+    "subtitle": "subtitles.the_sculky_depths.item.dead_ringer.charge"
+  },
+  "item.dead_ringer.release": {
+    "sounds": [
+      "the_sculky_depths:item/dead_ringer/release"
+    ],
+    "subtitle": "subtitles.the_sculky_depths.item.dead_ringer.release"
+  },
+
+  "entity.behemoth.emerge": {
+    "sounds": [
+      "the_sculky_depths:entity/behemoth/emerge"
+    ],
+    "subtitle": "subtitles.the_sculky_depths.entity.behemoth.emerge"
   }
 }
