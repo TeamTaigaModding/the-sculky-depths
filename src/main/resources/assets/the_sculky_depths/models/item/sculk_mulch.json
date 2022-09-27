@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "the_sculky_depths:item/sculk_mulch"
+  }
+}
