@@ -1,11 +1,17 @@
 {
   "block.stone_chest.open": {
     "sounds": [
-      "the_sculky_depths:block/stone_chest/open1",
-      "the_sculky_depths:block/stone_chest/open2"
+      "the_sculky_depths:block/stone_chest/open1"
     ],
     "subtitle": "subtitles.the_sculky_depths.block.stone_chest.open"
   },
+  "block.stone_chest.close": {
+    "sounds": [
+      "the_sculky_depths:block/stone_chest/close1"
+    ],
+    "subtitle": "subtitles.the_sculky_depths.block.stone_chest.close"
+  },
+
   "block.stone_chest.locked": {
     "sounds": [
       "the_sculky_depths:block/stone_chest/locked"
@@ -14,10 +20,13 @@
   },
   "block.echo_crystal.place": {
     "sounds": [
-      "the_sculky_depths:block/echo_crystal/place1"
+      "the_sculky_depths:block/echo_crystal/place1",
+      "the_sculky_depths:block/echo_crystal/place2",
+      "the_sculky_depths:block/echo_crystal/place3"
     ],
     "subtitle": "subtitles.block.generic.place"
   },
+
   "block.echo_crystal.break": {
     "sounds": [
       "the_sculky_depths:block/echo_crystal/break1",
