@@ -19,7 +19,7 @@ public class TSDItems {
     public static final ItemSubRegistryHelper HELPER = TheSculkyDepths.REGISTRY_HELPER.getItemSubHelper();
 //Leaving this up to dolt to figure out
     public static final RegistryObject<Item> ECHOLOCATOR = HELPER.createItem("echolocator", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
-    public static final RegistryObject<Item> SCULK_MULCH = HELPER.createItem("sculk_mulch", () -> new BowlFoodItem(new Item.Properties().food(SculkyDepthsFoods.SCULK_MULCH).stacksTo(16).tab(CreativeModeTab.TAB_FOOD)));
+    public static final RegistryObject<Item> SCULK_MULCH = HELPER.createItem("sculk_mulch", () -> new SculkMulchItem(new Item.Properties().food(SculkyDepthsFoods.SCULK_MULCH).stacksTo(16).tab(CreativeModeTab.TAB_FOOD)));
 
     public static final class SculkyDepthsFoods {
         public static final FoodProperties SCULK_MULCH = (new FoodProperties.Builder()).nutrition(-4).saturationMod(0.0F).effect(() -> new MobEffectInstance(MobEffects.DARKNESS, 160, 0), 0.25F).build();
