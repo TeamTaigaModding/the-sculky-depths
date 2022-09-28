@@ -22,6 +22,6 @@ public class TSDItems {
     public static final RegistryObject<Item> SCULK_MULCH = HELPER.createItem("sculk_mulch", () -> new SculkMulchItem(new Item.Properties().food(SculkyDepthsFoods.SCULK_MULCH).stacksTo(16).tab(CreativeModeTab.TAB_FOOD)));
 
     public static final class SculkyDepthsFoods {
-        public static final FoodProperties SCULK_MULCH = (new FoodProperties.Builder()).nutrition(-4).saturationMod(0.0F).effect(() -> new MobEffectInstance(MobEffects.DARKNESS, 160, 0), 0.25F).build();
+        public static final FoodProperties SCULK_MULCH = (new FoodProperties.Builder()).nutrition(-4).saturationMod(0.0F).effect(() -> new MobEffectInstance(MobEffects.DARKNESS, 160, 0), 0.25F).alwaysEat().build();
     }
 }

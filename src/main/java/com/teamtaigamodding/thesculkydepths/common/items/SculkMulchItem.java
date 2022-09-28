@@ -16,9 +16,18 @@ public class SculkMulchItem extends Item {
     @Override
     public ItemStack finishUsingItem(ItemStack stack, Level level, LivingEntity LE) {
         ItemStack itemstack = super.finishUsingItem(stack, level, LE);
-        if (LE instanceof Player player) {
 
+        ItemStack bowl = new ItemStack(Items.BOWL);
+        if (stack.isEmpty()) {
+            return bowl;
+        } else {
+            if (LE instanceof Player player) {
+                if (!player.getInventory().add(bowl)) {
+                    player.drop(bowl, false);
+                }
+                stack.shrink(1);
+            }
         }
-        return LE instanceof Player && ((Player) LE).getAbilities().instabuild ? itemstack : new ItemStack(Items.BOWL);
+        return stack;
     }
 }
