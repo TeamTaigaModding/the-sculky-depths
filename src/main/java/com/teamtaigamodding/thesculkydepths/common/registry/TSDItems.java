@@ -18,7 +18,7 @@ import net.minecraftforge.registries.RegistryObject;
 public class TSDItems {
     public static final ItemSubRegistryHelper HELPER = TheSculkyDepths.REGISTRY_HELPER.getItemSubHelper();
 //Leaving this up to dolt to figure out
-    public static final RegistryObject<Item> ECHOLOCATOR = HELPER.createItem("echolocator", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
+//  public static final RegistryObject<Item> ECHOLOCATOR = HELPER.createItem("echolocator", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
     public static final RegistryObject<Item> SCULK_MULCH = HELPER.createItem("sculk_mulch", () -> new SculkMulchItem(new Item.Properties().food(SculkyDepthsFoods.SCULK_MULCH).stacksTo(16).tab(CreativeModeTab.TAB_FOOD)));
 
     public static final class SculkyDepthsFoods {

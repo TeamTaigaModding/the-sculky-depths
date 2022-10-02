@@ -20,7 +20,8 @@ public class SculkMulchItem extends Item {
         ItemStack bowl = new ItemStack(Items.BOWL);
         if (stack.isEmpty()) {
             return bowl;
-        } else {
+        }
+        else {
             if (LE instanceof Player player) {
                 if (!player.getInventory().add(bowl)) {
                     player.drop(bowl, false);
