@@ -14,6 +14,9 @@ public class TSDSoundEvents {
             () -> new SoundEvent(new ResourceLocation(TheSculkyDepths.MOD_ID, "block.stone_chest.locked")));
     public static final RegistryObject<SoundEvent> STONE_CHEST_OPEN = SOUNDS.register("block.stone_chest.open",
             () -> new SoundEvent(new ResourceLocation(TheSculkyDepths.MOD_ID, "block.stone_chest.open")));
+
+    public static final RegistryObject<SoundEvent> STONE_CHEST_CLOSE = SOUNDS.register("block.stone_chest.close",
+            () -> new SoundEvent(new ResourceLocation(TheSculkyDepths.MOD_ID, "block.stone_chest.close")));
     public static final RegistryObject<SoundEvent> ECHO_CRYSTAL_PLACE = SOUNDS.register("block.echo_crystal.place",
             () -> new SoundEvent(new ResourceLocation(TheSculkyDepths.MOD_ID, "block.echo_crystal.place")));
     public static final RegistryObject<SoundEvent> ECHO_CRYSTAL_BREAK = SOUNDS.register("block.echo_crystal.break",
@@ -27,4 +30,7 @@ public class TSDSoundEvents {
 
     public static final RegistryObject<SoundEvent> BEHEMOTH_EMERGE = SOUNDS.register("entity.behemoth.emerge",
             () -> new SoundEvent(new ResourceLocation(TheSculkyDepths.MOD_ID, "entity.behemoth.emerge")));
+
+    public static final RegistryObject<SoundEvent> BEHEMOTH_HEARTBEAT = SOUNDS.register("entity.behemoth.heartbeat",
+            () -> new SoundEvent(new ResourceLocation(TheSculkyDepths.MOD_ID, "entity.behemoth.heartbeat")));
 }

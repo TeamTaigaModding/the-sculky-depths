@@ -1,16 +1,30 @@
 {
   "variants": {
-    "axis=x": {
+    "facing=up": {
+      "model": "the_sculky_depths:block/sculk_spine",
+      "x": 180
+    },
+    "facing=west": {
       "model": "the_sculky_depths:block/sculk_spine",
       "x": 90,
       "y": 90
     },
-    "axis=y": {
-      "model": "the_sculky_depths:block/sculk_spine"
-    },
-    "axis=z": {
+    "facing=south": {
       "model": "the_sculky_depths:block/sculk_spine",
       "x": 90
+    },
+    "facing=north": {
+      "model": "the_sculky_depths:block/sculk_spine",
+      "x": 90,
+      "y": 180
+    },
+    "facing=down": {
+      "model": "the_sculky_depths:block/sculk_spine"
+    },
+    "facing=east": {
+      "model": "the_sculky_depths:block/sculk_spine",
+      "x": 90,
+      "y": 270
     }
   }
 }

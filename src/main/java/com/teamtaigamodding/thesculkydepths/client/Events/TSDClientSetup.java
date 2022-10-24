@@ -8,5 +8,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 public class TSDClientSetup {
     public static void setup(final FMLClientSetupEvent EVENT) {
         ItemBlockRenderTypes.setRenderLayer(TSDBlocks.ECHO_CRYSTAL.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(TSDBlocks.SCULK_BONE_SPIKES.get(), RenderType.cutout());
     }
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "the_sculky_depths:block/mossy_deepslate_bricks",
+  "textures": {
+    "layer0": "the_sculky_depths:block/mossy_deepslate_bricks"
+  }
+}

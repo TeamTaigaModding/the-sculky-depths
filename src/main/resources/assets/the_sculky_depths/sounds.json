@@ -54,5 +54,15 @@
       "the_sculky_depths:entity/behemoth/emerge"
     ],
     "subtitle": "subtitles.the_sculky_depths.entity.behemoth.emerge"
+  },
+    "entity.behemoth.heartbeat": {
+      "sounds": [
+        "the_sculky_depths:entity/behemoth/heartbeat_1",
+        "the_sculky_depths:entity/behemoth/heartbeat_2",
+        "the_sculky_depths:entity/behemoth/heartbeat_3",
+        "the_sculky_depths:entity/behemoth/heartbeat_4"
+      ],
+      "subtitle": "subtitles.the_sculky_depths.entity.behemoth.heartbeat"
+    }
   }
 }
