@@ -16,7 +16,7 @@ import net.minecraftforge.registries.RegistryObject;
 @Mod.EventBusSubscriber(modid = TheSculkyDepths.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class TSDItems {
     public static final ItemSubRegistryHelper HELPER = TheSculkyDepths.REGISTRY_HELPER.getItemSubHelper();
-//Leaving this up to dolt to figure out
+//Waiting for dolt to give me new design istg
     public static final RegistryObject<Item> ECHOLOCATOR = HELPER.createItem("echolocator", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_TOOLS)));
     public static final RegistryObject<Item> SCULK_MULCH = HELPER.createItem("sculk_mulch", () -> new BowlFoodItem(new Item.Properties().food(SculkyDepthsFoods.SCULK_MULCH).stacksTo(16).tab(CreativeModeTab.TAB_FOOD)));
 
