@@ -1,10 +1,10 @@
 {
   "block.the_sculky_depths.deepslate_lantern": "Deepslate Lantern",
   "block.the_sculky_depths.echo_crystal": "Echo Crystal",
-  "block.the_sculky_depths.sculk_bone_block": "Sculk Bone Block",
+  "block.the_sculky_depths.sculk_cartilage": "Sculk Cartilage",
   "block.the_sculky_depths.carved_sculk_bone_block": "Carved Sculk Bone Block",
   "block.the_sculky_depths.stone_chest": "Stone Chest",
-  "block.the_sculky_depths.sculk_spine": "Sculk Spine",
+  "block.the_sculky_depths.sculk_vertebrae": "Sculk Vertebrae",
   "block.the_sculky_depths.broken_jukebox": "Broken Jukebox",
   "block.the_sculky_depths.sculk_bone_spikes": "Sculk Bone Spikes",
   "block.the_sculky_depths.mossy_deepslate_bricks": "Mossy Deepslate Bricks",
@@ -14,6 +14,7 @@
   "item.the_sculky_depths.sculk_mulch": "Sculk Mulch",
 
 
-  "subtitles.the_sculky_depths.block.stone_chest.open": "Chest opens",
-  "subtitles.the_sculky_depths.block.stone_chest.locked": "Lock clicks"
+  "subtitles.the_sculky_depths.block.stone_chest.open": "Stone Lid Slides Open",
+  "subtitles.the_sculky_depths.block.stone_chest.locked": "Stone Lid Stuck",
+  "subtitles.the_sculky_depths.block.stone_chest.closed": "Stone Lid Slides Closed"
 }
