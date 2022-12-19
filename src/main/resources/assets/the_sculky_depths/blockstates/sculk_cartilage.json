@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "the_sculky_depths:block/sculk_cartilage",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "the_sculky_depths:block/sculk_cartilage"
+    },
+    "axis=z": {
+      "model": "the_sculky_depths:block/sculk_cartilage",
+      "x": 90
+    }
+  }
+}

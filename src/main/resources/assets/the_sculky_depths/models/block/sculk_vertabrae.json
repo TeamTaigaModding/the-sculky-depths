@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "the_sculky_depths:block/sculk_spine_end",
-    "side": "the_sculky_depths:block/sculk_spine_side"
-  }
-}

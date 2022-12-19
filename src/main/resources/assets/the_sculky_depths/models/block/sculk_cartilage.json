@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "the_sculky_depths:block/sculk_cartilage_bottom",
+    "side": "the_sculky_depths:block/sculk_cartilage_side"
+  }
+}
