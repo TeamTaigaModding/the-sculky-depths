@@ -1,4 +1,4 @@
 # The Sculky Depths
-Welcome to the github of The Sculky Depths!
+Sculking my depths rn
 
-Hi guys
+nothing ever happens!!!
